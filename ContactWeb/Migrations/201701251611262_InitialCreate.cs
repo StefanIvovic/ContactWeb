@@ -19,7 +19,7 @@ namespace ContactWeb.Migrations
                         PhonePrimary = c.String(),
                         PhoneSecondary = c.String(),
                         Birthday = c.DateTime(nullable: false),
-                        StreatAddress1 = c.String(),
+                        StreetAddress1 = c.String(),
                         StreetAddress2 = c.String(),
                         City = c.String(),
                         State = c.String(),

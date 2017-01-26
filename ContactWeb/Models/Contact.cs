@@ -15,7 +15,7 @@ namespace ContactWeb.Models
         public string PhonePrimary { get; set; }
         public string PhoneSecondary { get; set; }
         public DateTime Birthday { get; set; }
-        public string StreatAddress1 { get; set; }
+        public string StreetAddress1 { get; set; }
         public string StreetAddress2 { get; set; }
         public string City { get; set; }
         public string State { get; set; }
