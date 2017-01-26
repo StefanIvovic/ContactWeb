@@ -7,9 +7,11 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using ContactWeb.Models;
+using Microsoft.AspNet.Identity;
 
 namespace ContactWeb.Controllers
 {
+    [Authorize]
     public class ContactsController : Controller
     {
         private ContactWebContext db = new ContactWebContext();
@@ -17,7 +19,9 @@ namespace ContactWeb.Controllers
         // GET: Contacts
         public ActionResult Index()
         {
-            return View(db.Contacts.ToList());
+
+            var userId = GetCurrentUserId();
+            return View(db.Contacts.Where(x=> x.UserId == userId).ToList());
         }
 
         // GET: Contacts/Details/5
@@ -122,6 +126,16 @@ namespace ContactWeb.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public Guid GetCurrentUserId()
+        {
+            return new Guid(User.Identity.GetUserId());
+        }
+
+        private bool EnsureIsUserContact(Contact contact)
+        {
+            return contact.UserId == GetCurrentUserId();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ContactWeb.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201701241237274_InitialCreate"; }
+            get { return "201701251611262_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
