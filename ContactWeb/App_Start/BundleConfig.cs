@@ -19,7 +19,8 @@ namespace ContactWeb
                       "~/Scripts/Lib/dataTables.bootstrap.min.js",
                       "~/Scripts/Lib/dataTables.colReorder.min.js"));
 
-            
+            bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
+                "~/Scripts/Lib/jquery-ui.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
@@ -27,6 +28,7 @@ namespace ContactWeb
                       "~/Content/jquery.dataTables_themeroller.css",
                       "~/Content/dataTables.bootstrap.min.css",
                       "~/Content/colReorder.bootstrap.min.css",
+                      "~/Content/jquery-ui.min.css",
                       "~/Content/site.css"));
         }
     }
