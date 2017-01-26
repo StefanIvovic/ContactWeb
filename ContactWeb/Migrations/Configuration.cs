@@ -31,7 +31,7 @@ namespace ContactWeb.Migrations
                     PhoneSecondary = "234-567-8901",
                     State = "IL"
                                     ,
-                    StreatAddress1 = "Sickbay",
+                    StreetAddress1 = "Sickbay",
                     StreetAddress2 = "Starship Enterprise NCC-1701"
                                     ,
                     UserId = new Guid("e291c84f-2a4c-49de-a67e-6e3ca2c40c18")
@@ -52,7 +52,7 @@ namespace ContactWeb.Migrations
                     PhoneSecondary = "456-789-0123",
                     State = "NY"
                                     ,
-                    StreatAddress1 = "Engineering",
+                    StreetAddress1 = "Engineering",
                     StreetAddress2 = "Starship Enterprise NCC-1701"
                                     ,
                     UserId = new Guid("e291c84f-2a4c-49de-a67e-6e3ca2c40c18")
@@ -73,7 +73,7 @@ namespace ContactWeb.Migrations
                     PhoneSecondary = "876-543-2109",
                     State = "CA"
                                     ,
-                    StreatAddress1 = "Science Station 1",
+                    StreetAddress1 = "Science Station 1",
                     StreetAddress2 = "Starship Enterprise NCC-1701"
                                     ,
                     UserId = new Guid("f7d0fa66-2c00-41a5-a9a3-b1bcb192fcef")
@@ -94,7 +94,7 @@ namespace ContactWeb.Migrations
                     PhoneSecondary = "654-321-0987",
                     State = "IA"
                                     ,
-                    StreatAddress1 = "The Bridge",
+                    StreetAddress1 = "The Bridge",
                     StreetAddress2 = "Starship Enterprise NCC-1701"
                                     ,
                     UserId = new Guid("f7d0fa66-2c00-41a5-a9a3-b1bcb192fcef")
